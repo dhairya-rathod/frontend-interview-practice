@@ -1,3 +1,6 @@
+function log(...arr) {
+  console.log(...arr);
+}
 // ***** currying *****
 // let sum = function (a) {
 //   return function (b) {
@@ -191,3 +194,112 @@
 //   }
 // });
 // console.log(boomCount);
+
+// ***** Problem: currying  *****
+/* Write a function that would allow you to do this
+multiply(5)(6);
+*/
+
+// function multiply(a) {
+//   return function (b) {
+//     return a * b;
+//   };
+// }
+// console.log(multiply(5)(6));
+
+// ***** Problem: guess output  *****
+// (function() {
+//   var a = b = 5;
+// })();
+
+// console.log(b);
+
+// var y = 1;
+// if (function f() {}) {
+//   y += typeof f;
+// }
+// console.log(y);
+
+// ***** Problem: How would you use a closure to create a private counter?  *****
+// function privateCounter() {
+//   let count = 0;
+
+//   function changeCounter(type) {
+//     switch (type) {
+//       case "sub":
+//         count -= 1;
+//         break;
+//       default:
+//         count += 1;
+//         break;
+//     }
+//   }
+
+//   function getCount() {
+//     return count;
+//   }
+
+//   return {
+//     changeCounter,
+//     getCount,
+//   };
+// }
+
+// const pvtCount = privateCounter();
+
+// pvtCount.changeCounter();
+// pvtCount.changeCounter();
+// pvtCount.changeCounter("sub");
+
+// console.log("Count: ", pvtCount.getCount());
+
+// ***** Problem: Given two strings, return true if they are anagrams of one another  *****
+// For example: Mary is an anagram of Army
+function isAnagram(str1, str2) {
+  // approach 1
+  // const arr1 = [...(str1.toLowerCase())];
+  // const arr2 = [...(str2.toLowerCase())];
+  // return (
+  //   arr1.every((val) => arr2.includes(val)) &&
+  //   arr2.every((val) => arr1.includes(val))
+  // );
+  // approach 2
+  // const arr1 = [...str1.toLowerCase()].sort().join("");
+  // const arr2 = [...str2.toLowerCase()].sort().join("");
+  // return arr1 === arr2;
+}
+
+// log(isAnagram("Mary", "army"));
+
+// ***** Problem: FizzBuzz Challenge  *****
+// Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+// for (let index = 1; index <= 100; index++) {
+// if (index % 3 === 0) {
+//   log("fizz");
+// } else if (index % 5 === 0) {
+//   log("buzz");
+// } else if (index % 3 === 0 && index % 5 === 0) {
+//   log("fizzBuzz");
+// }
+// let f = index % 3 == 0,
+//   b = index % 5 == 0;
+// console.log(f ? (b ? "FizzBuzz" : "Fizz") : b ? "Buzz" : index);
+// }
+
+// ***** Problem: Write a function that would allow you to do this? *****
+/*
+var addSix = createBase(6);
+addSix(10); // returns 16
+addSix(21); // returns 27
+*/
+// function createBase(num) {
+//   return function (num2) {
+//     return num + num2;
+//   };
+// }
+
+// ***** Write a "mul" function which will properly when invoked as below syntax *****
+/*
+console.log(mul(2)(3)(4)); // output : 24
+console.log(mul(4)(3)(4)); // output : 48
+*/
