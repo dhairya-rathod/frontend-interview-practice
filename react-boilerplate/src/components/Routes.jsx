@@ -5,7 +5,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { About, Home, Login } from "../pages";
+import { About, Home, Login, ReduxPractice } from "../pages";
 
 const AuthRoute = () => {
   const token = "";
@@ -24,6 +24,7 @@ export const AppRoutes = () => {
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
         </Route>
+        <Route path="redux-practice" element={<ReduxPractice />} />
       </Routes>
     </BrowserRouter>
   );
