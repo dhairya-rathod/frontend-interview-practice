@@ -1,5 +1,11 @@
-#my-ul li {
-  padding: 1rem;
-  background: lightblue;
-  border: 0.5px solid lightcoral;
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.star-container {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+  color: grey;
 }
