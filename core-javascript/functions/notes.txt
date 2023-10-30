@@ -6,10 +6,10 @@
   5. As a constructor (function.js#33)
   6. IIFE (Immediately Invoked Function Expression) (function.js#37)
 
--Value of this is defined on how the function is called. Even "strict" mode affect he value of this (function.js#42)
+-Value of "this" is defined on how the function is called. Even "strict" mode affect he value of "this" (function.js#42)
 -It also affects all the inner functions that are defined in the function which is declared in strict mode (function.js#49)
 -When a function is declared inside an object the value of "this" inside that function will refer to the object it is declared in (function.js#66)
 -The context is set at the time of invocation, thus if we update the value of the object property value, it will be reflected (function.js#73)
 -If we extract the method and save it in a variable, and then invoke the variable, the outcome will change (function.js#80)
 -Inner functions also invoke as a normal function and refer to the global context
--The arrow function does not have the this of its own, it access the this in its nearest scope
+-The arrow function does not have "this" of its own, it access "this" in its nearest scope

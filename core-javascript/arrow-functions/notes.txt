@@ -1,0 +1,8 @@
+-Arrow functions are new way to declare function in javascript, which was introduced in ES6. But, it behaves slightly differently from normal function.
+  1. `this`, `arguments`, `super` and bindings not allowed (arrow-functions.js#01)
+  2. We cannot use it as a constructor (arrow-functions.js#11)
+  3. Do not have prototype property (arrow-functions.js#15-28)
+
+-We can Implicitly return values with arrow functions (arrow-functions.js#31)
+-Arrow functions does not have "this" of it's own, it depends upton in which it was called (arrow-functions.js#35)
+-If we want to access the "this" of the current function then it is better to avoid the arrow functions (arrow-functions.js#60)
