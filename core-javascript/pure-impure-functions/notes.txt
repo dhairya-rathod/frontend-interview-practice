@@ -1,0 +1,3 @@
+-A Pure function is a function without any side effects. It returns same output for the same arguments provided to the function
+
+-An impure functions are a functions whose output may or may not change for the same set of arguments
