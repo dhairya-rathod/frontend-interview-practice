@@ -1,0 +1,14 @@
+-Sets are the javascript's unique collection of values of any type which includes `NaN` and undefined
+
+-Set Methods
+  1. add: Adds item to the set (set.js#08)
+  2. has: Returns `true` if item is available in the set else `false` (set.js#09-10)
+  3. clear: Removes all the items from the set (set.js#12)
+  4. delete: remove given item from the set (set.js#11)
+
+-WeakSet is same as Set except it only store objects.
+  1. WeakSet does not have size and foreach
+  2. WeakSet is not iterable
+  3. add() method throws an error for non object value
+
+-WeakSet cleans itself once the object is deleted or if there is no reference to the object (set.js#33)
