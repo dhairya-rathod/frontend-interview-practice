@@ -1,0 +1,14 @@
+-Map is use to store "unique values" in key value pairs. Here key and values can be of any types (map.js#02)
+-We can also use objects as the key (map.js#19)
+-Null values are treated as undefined (map.js#26)
+
+-Map Methods
+  set: Add the value for the key and returns the Map object (map.js#32)
+  has: Returns true if item with given key is present, false otherwise (map.js#44)
+  get: Returns value of the item with given key, undefined otherwise (map.js#45)
+  delete: Removes particular items with the given key (map.js#46)
+  clear: Removes all the items (map.js#47)
+  keys: Returns a new Iterator object that contains the keys for each element in the Map
+  values: Returns a new Iterator object that contains the values for each element in the Map
+  enteries: Returns an Iterator object that contains an array of key value in the way they were added
+  foreach(callback, thisArg): Calls the callback function once for each of the items in their insertion order. If thisArgs is passed then it will be called like this for each callback
