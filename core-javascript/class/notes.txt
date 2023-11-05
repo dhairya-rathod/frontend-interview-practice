@@ -1,0 +1,12 @@
+-Classes are primarily syntactical sugar over js's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript
+
+-We can declare a class in two ways:
+  1. class declaration (class.js#02)
+  2. class expression (class.js#17)
+
+-Constructor can be declared only once
+-Unlike function class can't be hoisted
+-Code inside class runs in strict mode
+-Calling the class without new keyword can cause an error (class.js#32)
+-Static methods can be access only by parent class and can't be by child or instance (class.js#35)
+-Class methods and Accessor properties can computed names, That means their name can be provided at runtime (class.js#54)

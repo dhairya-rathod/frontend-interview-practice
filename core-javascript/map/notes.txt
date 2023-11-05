@@ -12,3 +12,5 @@
   values: Returns a new Iterator object that contains the values for each element in the Map
   enteries: Returns an Iterator object that contains an array of key value in the way they were added
   foreach(callback, thisArg): Calls the callback function once for each of the items in their insertion order. If thisArgs is passed then it will be called like this for each callback
+
+-Every map.set call returns the map itself, so we can “chain” the calls (map.js#50)

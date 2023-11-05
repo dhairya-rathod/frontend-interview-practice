@@ -3,8 +3,8 @@ const map = new Map();
 map.set(5, "Int Five");
 map.set("5", "Str Five");
 console.log("size of the map :: ", map.size); // :: 2
-console.log("get Int Five :: ", map.get(5));
-console.log("get Str Five :: ", map.get("5"));
+console.log("get Int Five :: ", map.get(5)); // :: "Int Five"
+console.log("get Str Five :: ", map.get("5")); // :: "Str Five"
 
 // map with initial values
 const map2 = new Map([
@@ -45,3 +45,6 @@ console.log(map4.has(null)); // :: true
 console.log(map4.get(null)); // :: 23
 console.log(map4.delete(null));
 // console.log(map4.clear());
+
+// Map chain
+map.set("1", "str1").set(1, "num1").set(true, "bool1");
