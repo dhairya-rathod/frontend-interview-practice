@@ -10,3 +10,8 @@
 -Calling the class without new keyword can cause an error (class.js#32)
 -Static methods can be access only by parent class and can't be by child or instance (class.js#35)
 -Class methods and Accessor properties can computed names, That means their name can be provided at runtime (class.js#54)
+
+-We can use extend to achieve the inheritance (class.js#69)
+-If inherit any class and declare the constructor() method inside it then must declare super() method inside the constructor(). Otherwise we'll get ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor (class.js#80)
+-If there are any static methods in the parent class then they are also accessible to the inherited class.
+-`new.target` can be used to check the current instance of the class and where it is getting called from.
