@@ -1,0 +1,18 @@
+Closure is a function that remembers its outer variable and can access them.
+
+This is because in javascript variables are lexical scoped.
+
+To understand closures in detail, let's break down the components and mechanisms involved:
+
+1. Lexical Scoping:
+JavaScript uses lexical scoping, which means that the scope of a variable is determined by its position within the source code. Inner functions have access to variables and functions defined in their outer (enclosing) functions.
+2. Function Declaration and Execution:
+When a function is declared, it forms a closure by capturing its surrounding lexical environment, which includes its own local variables and parameters, as well as variables from its outer scope.
+3. Creating a Closure:
+A closure is created when a nested (inner) function references a variable from its containing (outer) function. This binding allows the inner function to access the variable even after the outer function has completed its execution.
+
+Closures are widely used in JavaScript for various purposes:
+
+1. Data Encapsulation: Closures allow you to create private variables and encapsulate data, exposing only what's necessary through a returned function.
+2. Callback Functions: Closures are often used in asynchronous programming and event handling, where a function passed as a callback retains access to the surrounding context.
+3. Module Pattern: Closures enable the creation of modules with private and public methods, controlling the visibility of variables and functions.
