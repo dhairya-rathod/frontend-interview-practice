@@ -1,0 +1,11 @@
+Every programming language have a built-in datatype Array but, in JavaScript Array is not like Array of other prograamming languages. Here, Array is an Object with Array like features.
+
+To add an element to an array...
+- Use Array.push() method to add element at the end of the array (array.js#7)
+- Use Array.unshift() method to add element at the start of the array (array.js#12)
+- Use Array.splice() method to add element at specific location of the array (array.js#16)
+
+To remove an element to an array...
+- Use Array.pop() method to remove element at the end of the array (array.js#21)
+- Use Array.shift() method to remove element at the start of the array (array.js#29)
+- Use Array.splice() OR Array.slice() method to remove element at specific location of the array (array.js#33)
