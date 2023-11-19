@@ -1,0 +1,2 @@
+#### Stack data structure
+- Stack is an ordered collection of list that follows LIFO (Last in First out) principle.
