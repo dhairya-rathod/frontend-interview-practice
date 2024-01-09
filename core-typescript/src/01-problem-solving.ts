@@ -54,3 +54,44 @@ function challenge05(input: string): string {
   return strArr.join("");
 }
 console.log("reversed string", challenge05("john Doe"));
+
+// ------------------------------------------------------------------------
+function challenge06(input: number): number {
+  // Write a TypeScript program to find and print the factorial of a given number.
+  if (input <= 0) return 0;
+
+  let answer: number = 1;
+  while (input > 0) {
+    answer = answer * input;
+    input--;
+  }
+
+  return answer;
+}
+
+// ------------------------------------------------------------------------
+function challenge07(input: string): boolean {
+  // implement a TypeScript function that checks if a string is a palindrome.
+  let pointer1: number = 0;
+  let pointer2: number = input.length - 1;
+  let isPalindrome: boolean = true;
+
+  while (pointer1 <= pointer2) {
+    if (input[pointer1] !== input[pointer2]) {
+      isPalindrome = false;
+      break;
+    }
+    pointer1++;
+    pointer2--;
+  }
+
+  return isPalindrome;
+}
+
+// ------------------------------------------------------------------------
+const challenge08 = <T>(input: T[]): T[] => {
+  return [...new Set(input)];
+};
+
+challenge08<number>([1, 4, 6, 2, 3, 7, 1, 3, 5, 9, 6, 7, 9]);
+challenge08<string>(["john", "kevin", "john", "emily", "sara", "arya", "emily"]);
