@@ -129,13 +129,93 @@
 
 // **** Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character '…', to make its length equal to maxlength. ****
 
-function truncate(str, maxlength) {
-  if (!maxlength) return str;
-  let str_ = [...str].splice(0, maxlength).join("");
-  if (str_.length < maxlength) {
-    console.log([].fill(".", 0, 3));
-  }
-  return str_;
-}
+// function truncate(str, maxlength) {
+//   if (!maxlength) return str;
+//   let str_ = [...str].splice(0, maxlength).join("");
+//   if (str_.length < maxlength) {
+//     console.log([].fill(".", 0, 3));
+//   }
+//   return str_;
+// }
 
-console.log(truncate("Ya", 5));
+// console.log(truncate("Ya", 5));
+
+
+// **** Write a javascript function to deepclone object/array ****
+// const deepClone = (input) => {
+//   if (input === null || typeof input !== 'object') return input;
+
+//   if (Array.isArray(input)) return input.map(deepClone);
+
+//   const clonedObj = {};
+//   for (const key in input) {
+//     if (input.hasOwnProperty(key)) {
+//       clonedObj[key] = deepClone(input[key])
+//     }
+//   }
+
+//   return clonedObj;
+// }
+// const originalObject = {
+//   name: 'John',
+//   age: 25,
+//   address: {
+//     city: 'New York',
+//     zip: '10001'
+//   },
+//   hobbies: ['reading', 'traveling']
+// };
+
+// const clonedObject = deepClone(originalObject);
+// clonedObject.age = 23
+// console.log(originalObject);
+// console.log(clonedObject);
+
+// **** Write a javascript function to create a promise series ****
+// Promise.seriese = function (input) {
+//   return new Promise((resolve) => {
+//     let output = [];
+
+//     function promiseSrs(index) {
+//       if (index === input.length) {
+//         resolve(output);
+//         return;
+//       }
+//       const currentPromise = input[index]
+//       currentPromise.then(data => {
+//         output.push(data);
+//         promiseSrs(index + 1);
+//       })
+
+//     }
+
+//     promiseSrs(0)
+//   })
+// }
+
+
+// const promise1 = new Promise((resolve) => setTimeout(() => resolve('First'), 1000));
+// const promise2 = new Promise((resolve) => setTimeout(() => resolve('Second'), 500));
+// const promise3 = new Promise((resolve) => setTimeout(() => resolve('Third'), 200));
+
+// const promiseArray = [promise1, promise2, promise3];
+
+// Promise.seriese(promiseArray)
+//   .then((results) => {
+//     console.log('Resolved in order:', results);
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error);
+//   });
+
+// **** write a javascript function to deepfreeze object ****
+// function deepFreeze(input) {
+//   Object.freeze(input);
+//   for (key in input) {
+//     if (typeof inputp[key] === "object" && inputp[key] !== null) {
+//       deepFreeze(inputp[key])
+//     }
+//   }
+
+//   return input
+// }
